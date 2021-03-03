@@ -1,0 +1,61 @@
+
+.logo {
+  &-direct {
+    font-size: 12px; // setting of figure's size
+    position: relative;
+    &__dog {
+      right: 0;
+      width: 13em;
+    }
+    &__hat {
+      width: 4em;
+      position: absolute;
+      top: 3.5em;
+      right: 3em;
+      transform: rotate(-3deg);
+    }
+    &__monocle {
+      width: 2em;
+      position: absolute;
+      top: 8.3em;
+      right: 5.2em;
+    }
+    &__mustache {
+      width: 5em;
+      position: absolute;
+      top: 9.4em;
+      right: 1.9em;
+      transform: rotate(-3deg);
+    }
+  }
+
+  &-mirror {
+    font-size: 16px; // setting of figure's size
+    position: relative;
+
+    &__dog {
+      right: 0;
+      width: 13em;
+    }
+    &__hat {
+      width: 4em;
+      position: absolute;
+      top: -0.5em;
+      left: 3.4em;
+      transform: rotate(3deg);
+    }
+    &__monocle {
+      width: 2em;
+      position: absolute;
+      top: 4.4em;
+      left: 1.8em;
+    }
+    &__mustache {
+      width: 5em;
+      position: absolute;
+      top: 5.5em;
+      left: 1.9em;
+      transform: rotate(3deg);
+    }
+  }
+}

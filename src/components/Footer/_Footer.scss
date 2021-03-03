@@ -1,0 +1,13 @@
+$background-color: #F7F7F7;
+
+.footer {
+  height: 6rem;
+  margin-top: -2rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__wrap {
+    height: 100%;
+  }
+}

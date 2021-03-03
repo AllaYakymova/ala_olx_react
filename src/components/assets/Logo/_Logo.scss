@@ -1,0 +1,45 @@
+$main-color: #FF8B00;
+$secondary-color: #502528;
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__img {
+    width: 5rem;
+    object-fit: cover;
+
+    &-load {
+      width: 13rem;
+      position: absolute;
+      right: 15em;
+    }
+  }
+  &__title {
+    font-family: 'Odor Mean Chey', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $main-color;
+    font-weight: 700;
+    text-shadow: 5px 3px 2px $secondary-color;
+    line-height: 1.2;
+  }
+  &__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $secondary-color;
+    text-shadow: none;
+  }
+}
+
+.ml-10 {
+  margin-left: 1em;
+}

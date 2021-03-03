@@ -1,0 +1,16 @@
+$background-color: #F7F7F7;
+
+.header {
+  position: relative;
+  padding: 0.1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bgc {
+  position: relative;
+  margin: 0 auto;
+  background: $background-color;
+}
+

@@ -1,0 +1,36 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Odor+Mean+Chey:wght@400;700&display=swap');
+@import '../components/assets/Loader/Loader';
+@import "../components/assets/Button/Button";
+@import "../components/assets/Selector/selector";
+@import "../components/assets/Input/input";
+@import "../components/assets/Logo/Logo";
+@import "src/components/Header/Header";
+@import "src/components/Footer/Footer";
+@import "../components/assets/widgets/WidgetBuilder";
+@import "src/components/ProductCards/CardBuilder";
+@import "src/components/ProductCards/CartCard/CartCard";
+@import "src/components/Cart/Cart";
+@import "../components/assets/LogoDogUX/LogoDogUX";
+@import "../components/assets/Messages/index";
+@import "src/components/FilterSidebar/filterSidebar";
+@import "src/components/Modal/Modal";
+@import "src/components/Form/productForm";
+@import "src/components/AdminDashboard/adminDashboard";
+@import "src/orders/OrdersList/orders";
+@import "App";
+
+body {
+  margin: 0;
+  font-family:
+  'Nunito', sans-serif,
+  'Odor Mean Chey', cursive,
+  'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

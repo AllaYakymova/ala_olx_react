@@ -1,0 +1,28 @@
+
+.input {
+  display: flex;
+  justify-self: flex-end;
+  padding: 0.4em 0.8em;
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &__error {
+    border: 1px solid #cc1e15;
+    &-message {
+      display: block;
+      height: 1.8em;
+      text-align: center;
+      margin-top: 0.5em;
+      font-size: 1.2em;
+      color: #cc1e15;
+    }
+  }
+  &__value {
+    font-weight: 700;
+    border: 1px solid $main-color;
+  }
+}

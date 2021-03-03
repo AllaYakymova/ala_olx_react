@@ -1,0 +1,52 @@
+$background-color: #F7F7F7;
+$main-color: #FF8B00;
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 247, 247, 0.9);
+  overflow: hidden;
+
+  &__dialog {
+    font-size: 10px;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35em;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid $main-color;
+    border-radius: 0.6rem;
+    pointer-events: auto;
+  }
+  &__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 0 1px 1px $background-color;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+  }
+  &__title {
+    line-height: 1.5;
+    color: $main-color;
+    font-size: 1.8em;
+  }
+  &__body {
+    padding: 1.2em;
+  }
+}

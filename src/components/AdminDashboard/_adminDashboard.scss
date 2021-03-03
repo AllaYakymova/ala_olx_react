@@ -1,0 +1,19 @@
+$background-color: #F7F7F7;
+
+.admin__dashboard {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 15rem;
+  width: 13rem;
+  transform: translateY(100%);
+  background-color: $background-color;
+  padding: 1.1em;
+  align-items: flex-end;
+  &-open {
+    right: 0;
+    bottom: 0;
+    transition: right 2s ease-in-out;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,109 @@
+$secondary-color: #502528;
+$main-color: #FF8B00;
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 77vh;
+}
+
+.cards-wrap {
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 78vh;
+  margin-bottom: 2rem;
+  width: 62rem;
+  padding: 0.5rem;
+
+  &_paginated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  &_myProducts {
+    width: 50rem;
+    justify-content: space-between;
+  }
+
+  &_cart {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+    min-height: 77vh;
+  }
+}
+.page {
+  &__wrap {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+  }
+  &-title {
+    font-family: 'Odor Mean Chey', cursive;
+    color: $secondary-color;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  &_pagination {
+    margin: 1rem auto;
+  }
+
+  &__scoreboard {
+    margin: 0 0.5em;
+    width: 2.5em;
+    text-align: center;
+    padding: 0.3em;
+    border: 1px solid $main-color;
+    border-radius: 0.7em;
+    &_pagination {
+      width: 5em;
+    }
+  }
+}
+
+.mt-10 {
+  margin-top: 1rem;
+}
+.mt-30 {
+  margin-top: 3rem;
+}
+.ml-10 {
+  margin-left: 1rem;
+}
+
+.mb-10 {
+  margin-bottom: 1rem;
+}
+
+.flag {
+  width: 2em;
+  margin-right: 1em;
+}

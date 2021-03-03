@@ -1,0 +1,129 @@
+$main-color: #FF8B00;
+$secondary-color: #502528;
+$text-color: #333333;
+$text-mute: #828282;
+@mixin flex-left {
+  display: flex;
+  position: relative;
+}
+
+.card {
+  @include flex-left;
+  font-size: 14px;
+  padding: 0.8em;
+  border: 2px solid transparent;
+  border-radius: 1em;
+  background-color: #fff;
+
+  &-short {
+    flex-direction: column;
+    width: 12em;
+    padding: 0.8em;
+    border: 2px solid #e5e5e5;
+
+    &:hover {
+      border: 2px solid $main-color;
+      box-shadow: 2px 5px 25px rgba(99, 99, 99, 0.7);
+    }
+  }
+  &-detail {
+    width: 42rem;
+    border: 2px solid $main-color;
+  }
+  &-cart {
+    padding: 0.5em 0 0;
+    border-radius: 0;
+  }
+
+  &__title {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    color: $text-color;
+
+    &-short {
+      font-size: 0.8em;
+      font-weight: 400;
+    }
+    &-detail {
+      font-size: 1.5em;
+    }
+    &-cart {
+      margin-bottom: 0.5em;
+      font-size: 1.5em;
+    }
+  }
+
+  &__price {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 900;
+    color: $main-color;
+
+    &-short {
+      display: block;
+      margin-bottom: 0.6em;
+    }
+    &-detail {
+      font-size: 2em;
+    }
+    &-cart {
+      font-size: 1.3em;
+    }
+  }
+  &__text {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 0.8em;
+    color: $text-mute;
+
+    &-detail {
+      font-size: 1em;
+    }
+    &-cart {
+      font-size: 1em;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 1em;
+
+    &-short {
+      margin-bottom: 0.8em;
+      height: 13em;
+    }
+    &-detail {
+      max-width: 20em;
+      height: 18em;
+    }
+    &-cart {
+      height: 5em;
+      width: 6em;
+    }
+  }
+  &__flag {
+    width: 2em;
+    position: absolute;
+    right: 0.8em;
+    bottom: 3.5em;
+  }
+  &__info-wrap {
+    @include flex-left;
+    flex-direction: column;
+
+    &-detail {
+      margin-left: 2em;
+      padding-top: 1.2em;
+    }
+    &-cart {
+      margin-left: 1em;
+      min-width: 22em;
+    }
+  }
+  &_mb {
+    margin-bottom: 1em;
+  }
+}

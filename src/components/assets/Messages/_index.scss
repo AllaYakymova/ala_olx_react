@@ -1,0 +1,35 @@
+
+.message {
+  margin-top: 1rem;
+  justify-self: center;
+  position: relative;
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px; // setting of figure's size
+
+  &-figure {
+    width: 25em;
+    height: 8em;
+    position: absolute;
+    top: 0;
+    right: 10em;
+    background-color:  #E3E3E3;
+    clip-path: polygon(0% 0%, 93% 0, 93% 71%, 85% 69%, 98% 100%, 70% 74%, 0% 75%);
+    padding-right: 2em;
+    color: $secondary-color;
+    font-family: 'Odor Mean Chey', cursive;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+.title-404 {
+  font-family: 'Odor Mean Chey', cursive;
+  text-transform: uppercase;
+  font-size: 7em;
+  font-weight: 400;
+  text-align: center;
+}

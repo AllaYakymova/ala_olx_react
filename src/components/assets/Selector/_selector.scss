@@ -1,0 +1,18 @@
+$main-color: #FF8B00;
+$text-color: #333333;
+
+.select {
+  border: 1px solid $main-color;
+  border-radius: 0.7em;
+  padding: 0.5em 1em;
+  display: block;
+  color: $main-color;
+  text-transform: capitalize;
+  &__error {
+    border: 1px solid #cc1e15;
+  }
+  &__option {
+    font-size: 1em;
+    color: $text-color;
+  }
+}

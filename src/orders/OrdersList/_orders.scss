@@ -1,0 +1,30 @@
+
+.orders__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 78vh;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 53rem;
+}
+
+.order {
+  &__details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1rem;
+    border: 3px solid $main-color;
+    color: #ffffff;
+    border-radius: 1em;
+    &_wrap {
+      padding: 0.5rem;
+      width: 18rem;
+    }
+  }
+}

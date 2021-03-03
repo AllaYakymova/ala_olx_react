@@ -1,0 +1,38 @@
+$main-color: #FF7051;
+$secondary-color: #502528;
+
+@mixin absolute-position {
+  position: absolute;
+  font-weight: 600;
+  color: $secondary-color;
+  text-align: left;
+}
+.widget {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 14px;
+  margin-left: 7rem;
+
+  &__counter {
+    padding: 0.2em;
+    top: 2em;
+    border-radius: 50%;
+    font-size: 0.6em;
+    @include absolute-position;
+    background-color: $main-color;
+    color: #F7F7F7;
+    border: 2px solid transparent;
+  }
+
+  &__title {
+    @include absolute-position;
+    padding-left: 0.3em;
+    top: 1.5em;
+    left: 2.3em;
+    font-size: 0.9em;
+    min-width: 6em;
+    text-align: left;
+  }
+}

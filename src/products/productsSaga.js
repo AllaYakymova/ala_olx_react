@@ -15,12 +15,13 @@ import routes from '../routers/routes';
 import { push } from 'connected-react-router';
 import { apiCreator } from '../api/apiCreator';
 import { apiRequestAction, apiRequestHandler } from '../api/sagas/requestSaga';
+import API from "../core/redux/constants";
 
 function* onFetchTotalOrigins() {
   const totalOrigins = yield select(getTotalOrigins);
 
   const fetchTotalOriginsRequest = apiRequestAction({
-    baseUrl: `${process.env.REACT_APP_PRODUCTS_API}-origins`,
+    baseUrl: `${API.URLS.PRODUCTS}-origins`,
     isEditable: false,
     actionType: actionsWithProducts.fetchTotalOrigins,
   });
@@ -41,7 +42,7 @@ function* onGetPriceInterval(totalItems, origins, isEditable) {
   });
 
   const setPriceIntervalRequest = apiRequestAction({
-    baseUrl: `${process.env.REACT_APP_PRODUCTS_API}/?`,
+    baseUrl: `${API.URLS.PRODUCTS}/?`,
     query: params,
     isEditable: isEditable,
     actionType: actionsWithProducts.setPriceInterval,
@@ -71,7 +72,7 @@ function* onFetchFilteredProducts() {
     const params = yield call(apiCreator, { page, perPage, origins, minPrice, maxPrice, isEditable });
 
     const fetchFilteredProductsRequest = apiRequestAction({
-      baseUrl: `${process.env.REACT_APP_PRODUCTS_API}/?`,
+      baseUrl: `${API.URLS.PRODUCTS}/?`,
       query: params,
       isEditable: isEditable,
       actionType: actionsWithProducts.fetchFilteredProducts,

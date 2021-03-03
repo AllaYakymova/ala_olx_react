@@ -1,4 +1,8 @@
 const API = {
+  URLS: {
+    PRODUCTS: 'https://yalantis-react-school-api.yalantis.com/api/v1/products',
+    ORDERS: 'https://yalantis-react-school-api.yalantis.com/api/v1/orders'
+  },
   PRODUCTS: {
     INDEX: 'products',
     ACTIONS: {

@@ -1,7 +1,7 @@
 <h3>ala_olx react app</h3>
 <b>The purpose</b>: to develop and improve  skills in creating applications in React, using modern technologies and libraries.
 <hr>
-<!-- <p>The reference to deployed app https://yalantis-react-app.herokuapp.com/</p> -->
+<p>The reference to deployed app https://yalantis-react-app.herokuapp.com/</p>
 <p><b>Used technologies:</b></p>
 <ul>
     <li>react: work with functional components, hooks (incl. custom hooks))</li> 
